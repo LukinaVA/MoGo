@@ -1,0 +1,30 @@
+@import "../vars";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 2rem;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.header__link {
+  margin-left: 3.3rem;
+  padding-bottom: .6rem;
+
+  font-weight: 400;
+  font-size: .93rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &_active {
+    color: $yellow;
+    border-bottom: .3rem solid $yellow;
+  }
+}

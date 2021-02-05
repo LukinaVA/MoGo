@@ -46,6 +46,10 @@ select {
   outline: none;
 }
 
+a {
+  color: inherit;
+}
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -63,6 +67,134 @@ select {
   font-style: normal;
   font-weight: 400;
   src: local("KaushanScript"), local("KaushanScript-Regular"), url("../fonts/KaushanScript-Regular.ttf");
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.intro {
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background: url("../images/intro_bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.intro__subtitle {
+  margin-top: 10rem;
+  font-family: KaushanScript, monospace;
+  font-weight: 400;
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+.intro__title {
+  margin: 0 auto;
+  max-width: 58rem;
+  width: 100%;
+  font-size: 10rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.intro__title:after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.2rem;
+  background: #fff;
+  margin: 3rem auto 4rem;
+}
+
+.intro__btn {
+  padding: 0.8rem 2rem;
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2rem solid #fff;
+}
+
+.intro__slider {
+  margin-top: 10rem;
+  display: flex;
+}
+
+.intro__link {
+  flex: 1;
+  padding: 1.3rem 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  border-top: 0.3rem solid rgba(255, 255, 255, 0.5);
+}
+.intro__link:not(:last-child) {
+  margin-right: 2rem;
+}
+.intro__link span {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.intro__link_active {
+  position: relative;
+  border-color: #fff;
+}
+.intro__link_active:before {
+  position: absolute;
+  top: -0.3rem;
+  content: "";
+  display: block;
+  width: 4.6rem;
+  height: 0.3rem;
+  background: #f38181;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.header__link {
+  margin-left: 3.3rem;
+  padding-bottom: 0.6rem;
+  font-weight: 400;
+  font-size: 0.93rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header__link_active {
+  color: #fce38a;
+  border-bottom: 0.3rem solid #fce38a;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

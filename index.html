@@ -2,28 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width'>
     <title>MoGo</title>
+    <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
     <div class='wrapper'>
         <div class='intro'>
             <div class='container'>
                 <header class='header'>
-                    <span class='header__logo'>MoGo</span>
+                    <div class='header__logo'>MoGo</div>
                     <nav class='header__nav'>
-                        <a href='#' class='header__link'>About</a>
+                        <a href='#' class='header__link header__link_active'>About</a>
                         <a href='#' class='header__link'>Service</a>
                         <a href='#' class='header__link'>Work</a>
                         <a href='#' class='header__link'>Blog</a>
                         <a href='#' class='header__link'>Contact</a>
-                        <a href='#' class='header__link'></a>
-                        <a href='#' class='header__link'></a>
+                        <a href='#' class='header__link'>
+                            <img src='images/cart.svg' alt='cart'/>
+                        </a>
+                        <a href='#' class='header__link'>
+                            <img src='images/glass.svg' alt='glass'/>
+                        </a>
                     </nav>
                 </header>
-                <span class='intro__subtitle'>Creative Template</span>
-                <span class='intro__title'>Welcome to MoGo</span>
+                <div class='intro__subtitle'>Creative Template</div>
+                <div class='intro__title'>Welcome to MoGo</div>
                 <a href='#' class='intro__btn'>Learn more</a>
-                <div class='intro__slider'></div>
+                <div class='intro__slider'>
+                    <a href='#' class='intro__link intro__link_active'><span>01</span>intro</a>
+                    <a href='#' class='intro__link'><span>02</span>work</a>
+                    <a href='#' class='intro__link'><span>03</span>about</a>
+                    <a href='#' class='intro__link'><span>04</span>contacts</a>
+                </div>
             </div>
         </div>
     </div>
