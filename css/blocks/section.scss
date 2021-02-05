@@ -1,0 +1,48 @@
+@import "../vars";
+
+.section {
+  padding-bottom: 7.3rem;
+}
+
+.section__header {
+  color: $black;
+  text-align: center;
+}
+
+.section__subtitle {
+  margin-top: 6rem;
+
+  font-family: KaushanScript, monospace;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.section__title {
+  margin-top: 1rem;
+
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  font-size: 2rem;
+
+  text-transform: uppercase;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: .2rem;
+    background: $pink;
+
+    margin: 2.5rem auto 3rem;
+  }
+}
+
+.section__text {
+  margin: 0 auto;
+  padding-bottom: 6.6rem;
+
+  max-width: 63rem;
+  width: 100%;
+
+  text-align: center;
+}

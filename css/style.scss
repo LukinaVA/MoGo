@@ -34,6 +34,7 @@ html {
   font-family: Roboto, monospace;
   font-size: 15px;
   font-weight: 400;
+  color: $grey;
 }
 
 
@@ -92,7 +93,9 @@ a {
   background: $white;
 }
 
-@import "blocks/intro";
 @import "blocks/header";
+@import "blocks/intro";
+@import "blocks/section";
+@import "blocks/media";
 
 @import "helpers";

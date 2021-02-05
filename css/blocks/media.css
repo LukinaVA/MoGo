@@ -1,0 +1,16 @@
+.media {
+  display: flex;
+  margin-bottom: 7.3rem;
+}
+
+.media__img {
+  transition: all 0.3s linear 0s;
+}
+.media__img:not(:last-child) {
+  margin-right: 2rem;
+}
+.media__img:hover {
+  transform: translate(-10px, -10px);
+}
+
+/*# sourceMappingURL=media.css.map */

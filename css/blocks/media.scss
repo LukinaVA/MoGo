@@ -1,0 +1,59 @@
+@import "../vars";
+
+.media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media__item {
+  &:hover {
+    .media__img {
+      transform: translate(-10px, -10px);
+
+      img {
+        opacity: .1;
+      }
+    }
+
+    .media__text {
+      opacity: 1;
+    }
+  }
+}
+
+.media__bg {
+  position: relative;
+  background: $blue;
+}
+
+.media__img {
+  transition: all .3s linear 0s;
+  background: linear-gradient(to bottom, $pink, $yellow);
+
+  img {
+    display: block;
+    transition: all .3s linear 0s;
+  }
+}
+
+.media__text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: $white;
+
+  text-transform: uppercase;
+  transition: all .3s linear 0s;
+
+  &:before {
+    content: url($image_dir + '/about/users.svg');
+    display: block;
+    text-align: center;
+  }
+}
