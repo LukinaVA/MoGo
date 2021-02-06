@@ -11,7 +11,7 @@
   padding: 3.3rem 0;
 
   &:not(&:last-child) {
-    border-bottom: .06rem solid #e5e5e5;
+    border-bottom: .06rem solid $grey-lite;
   }
 }
 
@@ -35,6 +35,10 @@
 
   text-transform: uppercase;
   color: $black;
+}
+
+.services__info {
+  line-height: 1.8;
 }
 
 

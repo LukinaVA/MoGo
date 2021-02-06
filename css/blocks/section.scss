@@ -2,6 +2,9 @@
 
 .section {
   margin-bottom: 7.3rem;
+  &_small {
+    margin-bottom: 0;
+  }
 }
 
 .section__header {
@@ -45,4 +48,5 @@
   width: 100%;
 
   text-align: center;
+  line-height: 1.6;
 }

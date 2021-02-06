@@ -188,6 +188,9 @@ a {
 .section {
   margin-bottom: 7.3rem;
 }
+.section_small {
+  margin-bottom: 0;
+}
 
 .section__header {
   color: #333;
@@ -223,6 +226,7 @@ a {
   max-width: 63rem;
   width: 100%;
   text-align: center;
+  line-height: 1.6;
 }
 
 .media {
@@ -332,6 +336,10 @@ a {
   color: #333;
 }
 
+.services__info {
+  line-height: 1.8;
+}
+
 .design {
   background: url("../images/design/design-bg.jpg") no-repeat;
   background-size: cover;
@@ -349,6 +357,66 @@ a {
   position: absolute;
   top: 38%;
   left: 60%;
+}
+
+.suggestion__content {
+  display: flex;
+}
+
+.suggestion__img {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.suggestion__accordion {
+  flex: 1;
+}
+
+.accordion__item {
+  position: relative;
+  border-collapse: collapse;
+}
+.accordion__item:not(.accordion__item:last-child) {
+  margin-bottom: 0.6rem;
+}
+.accordion__item_active .accordion__content {
+  display: block;
+}
+.accordion__item_active .accordion__title:after {
+  transform: rotate(180deg);
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 0.06rem solid #e5e5e5;
+}
+
+.accordion__ico {
+  margin-right: 1rem;
+}
+
+.accordion__title {
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  color: #333;
+}
+.accordion__title:after {
+  content: url("../images/suggestion/arrow-down.svg");
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion__content {
+  display: none;
+  padding: 1rem;
+  border: 0.06rem solid #e5e5e5;
+  font-style: italic;
+  line-height: 1.5;
+  color: #999;
 }
 
 .wrapper {
