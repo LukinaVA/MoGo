@@ -186,7 +186,7 @@ a {
 }
 
 .section {
-  padding-bottom: 7.3rem;
+  margin-bottom: 7.3rem;
 }
 
 .section__header {
@@ -330,6 +330,25 @@ a {
   font-size: 0.93rem;
   text-transform: uppercase;
   color: #333;
+}
+
+.design {
+  background: url("../images/design/design-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.design__content {
+  position: relative;
+}
+
+.design__img_main img {
+  display: block;
+  margin: 0 auto;
+}
+.design__img_small {
+  position: absolute;
+  top: 38%;
+  left: 60%;
 }
 
 .wrapper {

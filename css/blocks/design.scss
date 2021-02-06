@@ -1,0 +1,26 @@
+@import "../vars";
+
+.design {
+  background: url($image_dir + '/design/design-bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+.design__content {
+  position: relative;
+}
+
+.design__img {
+  &_main {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &_small {
+    position: absolute;
+
+    top: 38%;
+    left: 60%;
+  }
+}
