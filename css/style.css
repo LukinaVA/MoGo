@@ -300,6 +300,38 @@ a {
   font-size: 4.8rem;
 }
 
+.services__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__row {
+  display: flex;
+  padding: 3.3rem 0;
+}
+.services__row:not(.services__row:last-child) {
+  border-bottom: 0.06rem solid #e5e5e5;
+}
+
+.services__item {
+  flex: 1;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.services__icon {
+  margin-right: 1.6rem;
+}
+
+.services__title {
+  margin-bottom: 1rem;
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;

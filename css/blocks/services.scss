@@ -1,0 +1,40 @@
+@import "../vars";
+
+.services__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__row {
+  display: flex;
+
+  padding: 3.3rem 0;
+
+  &:not(&:last-child) {
+    border-bottom: .06rem solid #e5e5e5;
+  }
+}
+
+.services__item {
+  flex: 1;
+  display: flex;
+
+  padding: 0 2rem;
+}
+
+.services__icon {
+  margin-right: 1.6rem;
+}
+
+.services__title {
+  margin-bottom: 1rem;
+
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: .93rem;
+
+  text-transform: uppercase;
+  color: $black;
+}
+
+
