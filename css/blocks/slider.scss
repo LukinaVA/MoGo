@@ -1,10 +1,14 @@
 @import "../vars";
 
-.quotes {
-  background: #f8f8f8;
+.slider {
+  background: $white-dark;
+
+  &.reviews {
+    background: $white;
+  }
 }
 
-.quotes__slide {
+.slider__item {
   display: flex;
   padding: 4.6rem 0;
 
@@ -23,12 +27,12 @@
   }
 }
 
-.quotes__media {
+.slider__media {
   position: relative;
   margin-right: 4rem;
 }
 
-.quotes__img {
+.slider__img {
   &_positioned {
     position: absolute;
     top: 50%;
@@ -37,14 +41,20 @@
   }
 }
 
-.quotes__text {
+.slider__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider__text {
   font-style: italic;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-.quotes__signature {
+.slider__signature {
   font-family: KaushanScript, monospace;
   font-size: 1.6rem;
   color: $black;
