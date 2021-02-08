@@ -240,7 +240,8 @@ a {
 .media__item:hover .media__img img {
   opacity: 0.1;
 }
-.media__item:hover .media__text {
+.media__item:hover .media__text,
+.media__item:hover .media__social-networks {
   opacity: 1;
 }
 
@@ -275,6 +276,55 @@ a {
   content: url("../images/about/users.svg");
   display: block;
   text-align: center;
+}
+
+.media__social-networks {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  transition: all 0.3s linear 0s;
+}
+
+.media__social-network {
+  width: 3.6rem;
+  height: 3.6rem;
+  background: #fce38a;
+  cursor: pointer;
+}
+.media__social-network:not(.media__social-network:last-child) {
+  border-right: 0.06rem solid rgba(243, 129, 129, 0.1);
+}
+.media__social-network img {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.media__social-network_active {
+  background: #f38181;
+}
+
+.media__caption {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.media__name {
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: 0.93rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.media__role {
+  margin-top: 0.4rem;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .statistics {
