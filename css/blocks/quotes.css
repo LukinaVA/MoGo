@@ -1,0 +1,27 @@
+.quotes {
+  background: #f8f8f8;
+}
+
+.quotes__slide {
+  display: flex;
+}
+
+.quotes__text {
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.quotes__signature {
+  font-family: KaushanScript, monospace;
+  font-size: 1.6rem;
+  color: #333;
+}
+.quotes__signature:before {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.2rem;
+  background: #f38181;
+}
+
+/*# sourceMappingURL=quotes.css.map */
