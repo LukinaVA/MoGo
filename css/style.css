@@ -522,6 +522,16 @@ a {
   vertical-align: middle;
 }
 
+.logos {
+  padding: 4rem 0;
+  background: #f8f8f8;
+}
+
+.logos__row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;

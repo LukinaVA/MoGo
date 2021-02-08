@@ -1,0 +1,11 @@
+@import "../vars";
+
+.logos {
+  padding: 4rem 0;
+  background: $white-dark;
+}
+
+.logos__row {
+  display: flex;
+  justify-content: space-between;
+}
