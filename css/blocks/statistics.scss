@@ -24,9 +24,18 @@
   &:not(&:last-child) {
     border-right: .06rem solid rgba(255, 255, 255, .5);
   }
+  
+  @media #{$laptop} {
+    padding: 4.28rem 0;
+    font-size: .66rem;
+  }
 }
 
 .statistics__num {
   font-weight: 700;
   font-size: 4.8rem;
+
+  @media #{$laptop} {
+    font-size: 3.42rem;
+  }
 }

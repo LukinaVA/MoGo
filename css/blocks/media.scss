@@ -34,6 +34,10 @@
   img {
     display: block;
     transition: all .3s linear 0s;
+    
+    @media #{$laptop} {
+      width: 18rem;
+    }
   }
 }
 
@@ -56,6 +60,10 @@
     content: url($image_dir + '/about/users.svg');
     display: block;
     text-align: center;
+  }
+  
+  @media #{$laptop} {
+    font-size: .85rem;
   }
 }
 
@@ -94,11 +102,20 @@
   &_active {
     background: $pink;
   }
+
+  @media #{$laptop} {
+    width: 2.57rem;
+    height: 2.57rem;
+  }
 }
 
 .media__caption {
   margin-top: 2rem;
   text-align: center;
+
+  @media #{$laptop} {
+    margin-top: 1.42rem;
+  }
 }
 
 .media__name {
@@ -108,6 +125,10 @@
   color: $black;
 
   text-transform: uppercase;
+
+  @media #{$laptop} {
+    font-size: .66rem;
+  }
 }
 
 .media__role {
@@ -115,4 +136,9 @@
 
   font-style: italic;
   font-weight: 300;
+
+  @media #{$laptop} {
+    margin-top: .28rem;
+    font-size: .71rem;
+  }
 }

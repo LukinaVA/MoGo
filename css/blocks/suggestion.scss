@@ -1,3 +1,5 @@
+@import "../vars";
+
 .suggestion__content {
   display: flex;
 }
@@ -5,6 +7,16 @@
 .suggestion__img {
   flex: 1;
   margin-right: 2rem;
+
+  img {
+    @media #{$laptop} {
+      width: 27.14rem;
+    }
+  }
+
+  @media #{$laptop} {
+    margin-right: 1.42rem;
+  }
 }
 
 .suggestion__accordion {

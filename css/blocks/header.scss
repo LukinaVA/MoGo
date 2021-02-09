@@ -6,11 +6,19 @@
   align-items: center;
 
   padding-top: 2rem;
+
+  @media #{$laptop} {
+    padding-top: 1.4rem;
+  }
 }
 
 .header__logo {
   font-weight: 700;
   font-size: 2rem;
+
+  @media #{$laptop} {
+    font-size: 1.4rem;
+  }
 }
 
 .header__link {
@@ -26,5 +34,15 @@
   &_active {
     color: $yellow;
     border-bottom: .2rem solid $yellow;
+
+    @media #{$laptop} {
+      border-width: .14rem;
+    }
+  }
+
+  @media #{$laptop} {
+    margin-left: 2.35rem;
+    padding-bottom: .42rem;
+    font-size: .66rem;
   }
 }

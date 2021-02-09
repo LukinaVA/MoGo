@@ -13,6 +13,10 @@
   &:not(&:last-child) {
     border-bottom: .06rem solid $grey-lite;
   }
+
+  @media #{$laptop} {
+    padding: 2.3rem 0;
+  }
 }
 
 .services__item {
@@ -20,10 +24,18 @@
   display: flex;
 
   padding: 0 2rem;
+
+  @media #{$laptop} {
+    padding: 0 1.42rem;
+  }
 }
 
 .services__icon {
   margin-right: 1.6rem;
+
+  @media #{$laptop} {
+    margin-right: 1.14rem;
+  }
 }
 
 .services__title {
@@ -35,10 +47,20 @@
 
   text-transform: uppercase;
   color: $black;
+
+  @media #{$laptop} {
+    margin-bottom: .71rem;
+    font-size: .66rem;
+  }
 }
 
 .services__info {
   line-height: 1.8;
+
+  @media #{$laptop} {
+    font-size: .7rem;
+    line-height: 1.28;
+  }
 }
 
 
