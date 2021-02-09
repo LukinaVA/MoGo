@@ -107,6 +107,7 @@ a {
 }
 
 .intro {
+  min-height: 100vh;
   font-family: Montserrat, monospace;
   font-weight: 700;
   color: #fff;
@@ -744,6 +745,184 @@ a {
   width: 4rem;
   height: 0.2rem;
   background: #f38181;
+}
+
+.footer__col:not(.footer__col:last-child) {
+  margin-right: 3rem;
+}
+
+.footer__col-1 {
+  flex: 3;
+}
+
+.footer__col-2 {
+  flex: 2;
+}
+
+.footer__col-3 {
+  flex: 1;
+}
+
+.footer__content {
+  margin: 4.6rem 0;
+  display: flex;
+}
+
+.footer__logo {
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  font-size: 3.06rem;
+  color: #ccc;
+}
+
+.footer__text {
+  margin-top: 1.8rem;
+  line-height: 1.6rem;
+}
+
+.footer__followers {
+  margin: 3rem 0 1.2rem 0;
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: 0.93rem;
+  color: #333;
+}
+.footer__followers span {
+  margin-right: 0.2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.footer__social-networks {
+  padding-top: 1rem;
+  border-top: 0.06rem solid #e5e5e5;
+  font-style: italic;
+  font-weight: 300;
+}
+.footer__social-networks a {
+  margin-left: 1.2rem;
+}
+
+.footer__subscription {
+  margin-top: 2.3rem;
+}
+.footer__subscription input {
+  padding: 0.8rem;
+  border: 0.06rem solid #e7e7e7;
+  border-right: 0;
+}
+.footer__subscription input::placeholder {
+  color: #ccc;
+}
+.footer__subscription button {
+  padding: 0.9rem 2rem;
+  background: #95e1d3;
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  font-size: 0.93rem;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.footer__subscription button:hover {
+  text-decoration: underline;
+}
+
+.footer__caption {
+  margin-bottom: 2.6rem;
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: 0.93rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.footer__blog {
+  display: flex;
+  cursor: pointer;
+}
+.footer__blog:not(.footer__blog:last-child) {
+  margin-bottom: 2rem;
+}
+.footer__blog:hover .footer__title {
+  text-decoration: underline;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__img {
+  margin-right: 1.3rem;
+}
+
+.footer__date {
+  margin-top: 0.86rem;
+}
+
+.footer__title {
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer__date {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.86rem;
+}
+
+.footer__link {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.86rem;
+  text-decoration: none;
+  color: #333;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  padding: 1.6rem 0;
+  border-top: 0.06rem solid #e5e5e5;
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: 0.93rem;
+  color: #333;
+  text-align: center;
+}
+.footer__copyright a {
+  text-decoration: none;
+  color: #f38181;
+}
+.footer__copyright a:hover {
+  text-decoration: underline;
+}
+
+.inst-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.inst-gallery__row {
+  display: flex;
+}
+
+.inst-gallery__img {
+  margin-right: 0.13rem;
+  margin-bottom: 0.13rem;
+}
+.inst-gallery__img img {
+  display: block;
 }
 
 .wrapper {

@@ -1,0 +1,188 @@
+@import "../vars";
+
+.footer__col {
+  &:not(&:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+.footer__col-1 {
+  flex: 3;
+}
+
+.footer__col-2 {
+  flex: 2;
+}
+
+.footer__col-3 {
+  flex: 1;
+}
+
+.footer__content {
+  margin: 4.6rem 0;
+
+  display: flex;
+}
+
+.footer__logo {
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  font-size: 3.06rem;
+  color: #ccc;
+}
+
+.footer__text {
+  margin-top: 1.8rem;
+  line-height: 1.6rem;
+}
+
+.footer__followers {
+  margin: 3rem 0 1.2rem 0;
+
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: .93rem;
+  color: $black;
+
+  span {
+    margin-right: .2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}
+
+.footer__social-networks {
+  padding-top: 1rem;
+  border-top: .06rem solid $grey-lite;
+
+  font-style: italic;
+  font-weight: 300;
+
+  a {
+    margin-left: 1.2rem;
+  }
+}
+
+.footer__subscription {
+  margin-top: 2.3rem;
+
+  input {
+    padding: .8rem;
+    border: .06rem solid #e7e7e7;
+    border-right: 0;
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+
+  button {
+    padding: .9rem 2rem;
+    background: $blue;
+
+    font-family: Montserrat, monospace;
+    font-weight: 700;
+    font-size: .93rem;
+    color: $white;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__caption {
+  margin-bottom: 2.6rem;
+
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: .93rem;
+
+  color: $black;
+  text-transform: uppercase;
+}
+
+.footer__blog {
+  &:not(&:last-child) {
+    margin-bottom: 2rem;
+  }
+  display: flex;
+  cursor: pointer;
+
+  &:hover {
+    .footer__title {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__img {
+  margin-right: 1.3rem;
+}
+
+.footer__date {
+  margin-top: .86rem;
+}
+
+.footer__title {
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 1.2rem;
+
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer__date {
+  font-style: italic;
+  font-weight: 300;
+  font-size: .86rem;
+}
+
+.footer__link {
+  display: block;
+  margin-top: 1rem;
+
+  font-style: italic;
+  font-weight: 300;
+  font-size: .86rem;
+
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__copyright {
+  padding: 1.6rem 0;
+  border-top: .06rem solid $grey-lite;
+
+  font-family: Montserrat, monospace;
+  font-weight: 400;
+  font-size: .93rem;
+  color: $black;
+
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $pink;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

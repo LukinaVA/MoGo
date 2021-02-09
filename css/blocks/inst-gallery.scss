@@ -1,0 +1,19 @@
+@import "../vars";
+
+.inst-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.inst-gallery__row {
+  display: flex;
+}
+
+.inst-gallery__img {
+  margin-right: .13rem;
+  margin-bottom: .13rem;
+
+  img {
+    display: block;
+  }
+}
