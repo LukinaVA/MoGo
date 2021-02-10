@@ -14,8 +14,4 @@
   width: 100%;
 
   margin: 0 auto;
-
-  @media #{$laptop} {
-    max-width: 59rem;
-  }
 }

@@ -6,10 +6,6 @@
 
   background: url($image_dir + '/map/bg.jpg') no-repeat;
   background-size: cover;
-
-  @media #{$laptop} {
-    padding: 2.57rem 0;
-  }
 }
 
 .map__link {
@@ -22,7 +18,6 @@
 
   &:before {
     margin-bottom: 1rem;
-
     content: url($image_dir + '/map/pin.svg');
     display: block;
   }

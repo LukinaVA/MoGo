@@ -5,10 +5,6 @@
   border-collapse: collapse;
   &:not(&:last-child) {
     margin-bottom: .6rem;
-    
-    @media #{$laptop} {
-      margin-bottom: .42rem;
-    }
   }
 
   &_active {
@@ -28,18 +24,10 @@
   padding: 1rem;
 
   border: .06rem solid $grey-lite;
-
-  @media #{$laptop} {
-    padding: .71rem;
-  }
 }
 
 .accordion__ico {
   margin-right: 1rem;
-
-  @media #{$laptop} {
-    margin-right: .71rem;
-  }
 }
 
 .accordion__title {
@@ -50,18 +38,10 @@
   text-transform: uppercase;
   color: $black;
 
-  @media #{$laptop} {
-    font-size: .66rem;
-  }
-
   &:after {
     content: url($image_dir + '/suggestion/arrow-down.svg');
     position: absolute;
     right: 1rem;
-
-    @media #{$laptop} {
-      right: .71rem;
-    }
   }
 }
 
@@ -74,10 +54,4 @@
   font-style: italic;
   line-height: 1.5;
   color: $grey;
-
-  @media #{$laptop} {
-    padding: .71rem;
-    line-height: 1.07;
-    font-size: .71rem;
-  }
 }

@@ -12,10 +12,6 @@
   display: flex;
   padding: 4.6rem 0;
 
-  @media #{$laptop} {
-    padding: 3.28rem 0;
-  }
-
   &:before,
   &:after {
     content: url($image_dir + '/quotes/arrow.svg');
@@ -23,47 +19,27 @@
     align-items: center;
 
     padding: 0 4.6rem 0 1.3rem;
-
-    @media #{$laptop} {
-      padding: 0 3.28rem 0 .92rem;
-    }
   }
 
   &:after {
     transform: rotate(180deg);
     padding: 0 1.3rem 0 4.6rem;
-
-    @media #{$laptop} {
-      padding: 0 .92rem 0 3.28rem;
-    }
   }
 }
 
 .slider__media {
   position: relative;
   margin-right: 4rem;
-
-  @media #{$laptop} {
-    margin-right: 2.85rem;
-  }
 }
 
 .slider__img {
   display: block;
-
-  @media #{$laptop} {
-    width: 7rem;
-  }
 
   &_positioned {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    @media #{$laptop} {
-      width: 50%;
-    }
   }
 }
 
@@ -78,21 +54,12 @@
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.4rem;
-
-  @media #{$laptop} {
-    font-size: 1.14rem;
-    line-height: 1.71rem;
-  }
 }
 
 .slider__signature {
   font-family: KaushanScript, monospace;
   font-size: 1.6rem;
   color: $black;
-
-  @media #{$laptop} {
-    font-size: 1.14rem;
-  }
 
   &:before {
     content: '';
@@ -103,11 +70,5 @@
 
     margin-right: .6rem;
     vertical-align: middle;
-
-    @media #{$laptop} {
-      width: 2.85rem;
-      height: .14rem;
-      margin-right: .42rem;
-    }
   }
 }

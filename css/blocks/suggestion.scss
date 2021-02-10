@@ -9,13 +9,8 @@
   margin-right: 2rem;
 
   img {
-    @media #{$laptop} {
-      width: 27.14rem;
-    }
-  }
-
-  @media #{$laptop} {
-    margin-right: 1.42rem;
+    display: block;
+    width: 38rem;
   }
 }
 

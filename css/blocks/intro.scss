@@ -1,7 +1,6 @@
 @import "../vars";
 
 .intro {
-  min-height: 100vh;
   font-family: Montserrat, monospace;
   font-weight: 700;
 
@@ -20,11 +19,6 @@
   font-size: 4.8rem;
 
   text-align: center;
-
-  @media #{$laptop} {
-    margin-top: 7.14rem;
-    font-size: 3.42rem;
-  }
 }
 
 .intro__title {
@@ -45,17 +39,6 @@
     height: .2rem;
     background: $white;
     margin: 3rem auto 4rem;
-
-    @media #{$laptop} {
-      width: 2.8rem;
-      height: .14rem;
-      margin: 2.14rem auto 2.8rem;
-    }
-  }
-
-  @media #{$laptop} {
-    max-width: 41.42rem;
-    font-size: 7.14em;
   }
 }
 
@@ -67,21 +50,11 @@
   text-decoration: none;
 
   border: .2rem solid $white;
-
-  @media #{$laptop} {
-    padding: .57rem 1.42rem;
-    font-size: .66rem;
-    border-width: .14rem;
-  }
 }
 
 .intro__slider {
   margin-top: 10rem;
   display: flex;
-
-  @media #{$laptop} {
-    margin-top: 7.14rem;
-  }
 }
 
 .intro__link {
@@ -99,21 +72,12 @@
 
   &:not(:last-child) {
     margin-right: 2rem;
-
-    @media #{$laptop} {
-      margin-right: 1.4rem;
-    }
   }
 
   span {
     margin-right: .5rem;
     font-weight: 700;
     font-size: 1.6rem;
-
-    @media #{$laptop} {
-      margin-right: .35rem;
-      font-size: 1.14rem;
-    }
   }
 
   &_active {
@@ -129,18 +93,6 @@
       width: 4.6rem;
       height: .2rem;
       background: $pink;
-
-      @media #{$laptop} {
-        top: -.14rem;
-        width: 3.28rem;
-        height: .14rem;
-      }
     }
-  }
-
-  @media #{$laptop} {
-    padding: 0.92rem 0;
-    font-size: 0.85rem;
-    border-width: .14rem;
   }
 }

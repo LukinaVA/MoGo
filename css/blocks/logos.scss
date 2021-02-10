@@ -3,10 +3,6 @@
 .logos {
   padding: 4rem 0;
   background: $white-dark;
-
-  @media #{$laptop} {
-    padding: 2.8rem 0;
-  }
 }
 
 .logos__row {

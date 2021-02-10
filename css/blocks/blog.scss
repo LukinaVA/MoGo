@@ -7,10 +7,6 @@
 .blog__item {
   &:not(&:last-child) {
     margin-right: 2rem;
-
-    @media #{$laptop} {
-      margin-right: 1.42rem;
-    }
   }
 }
 
@@ -19,10 +15,7 @@
 
   img {
     display: block;
-
-    @media #{$laptop} {
-      width: 18.09rem;
-    }
+    width: 25.33rem;
   }
 }
 
@@ -39,21 +32,11 @@
 
   background: $blue;
 
-  @media #{$laptop} {
-    left: -.42rem;
-    bottom: .42rem;
-    padding: .71rem;
-  }
-
   div {
     font-family: Montserrat, monospace;
     font-style: normal;
     font-weight: 700;
     font-size: 2rem;
-
-    @media #{$laptop} {
-      font-size: 1.42rem;
-    }
   }
 }
 
@@ -64,50 +47,27 @@
   font-size: .93rem;
   color: $black;
   text-transform: uppercase;
-
-  @media #{$laptop} {
-    margin-top: .57rem;
-    font-size: .66rem;
-  }
 }
 
 .blog__text {
   margin-top: .8rem;
   padding-bottom: 1.3rem;
   border-bottom: .06rem solid $grey-lite;
-
-  @media #{$laptop} {
-    margin-top: .57rem;
-    padding-bottom: .92rem;
-    font-size: .71rem;
-  }
 }
 
 .blog__info {
   margin-top: 1rem;
   font-style: italic;
   font-weight: 300;
-
-  @media #{$laptop} {
-    margin-top: .71rem;
-  }
 }
 
 .blog__views {
   margin-right: 1rem;
 
-  @media #{$laptop} {
-    margin-right: .71rem;
-  }
-
   &:before {
     content: url($image_dir + '/blog/view.svg');
     margin-right: .4rem;
     vertical-align: middle;
-
-    @media #{$laptop} {
-      margin-right: .28rem;
-    }
   }
 }
 
@@ -116,9 +76,5 @@
     content: url($image_dir + '/blog/speech.svg');
     margin-right: .4rem;
     vertical-align: middle;
-
-    @media #{$laptop} {
-      margin-right: .28rem;
-    }
   }
 }

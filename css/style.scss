@@ -35,6 +35,10 @@ html {
   font-size: 15px;
   font-weight: 400;
   color: $grey;
+
+  @media #{$laptop} {
+    font-size: 11px;
+  }
 }
 
 input,
