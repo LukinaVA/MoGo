@@ -12,6 +12,15 @@
 
   &:not(&:last-child) {
     border-bottom: .06rem solid $grey-lite;
+
+    @media #{$mobile-sm} {
+      border: none;
+    }
+  }
+
+  @media #{$mobile-sm} {
+    flex-direction: column;
+    padding: 0;
   }
 }
 
@@ -20,10 +29,19 @@
   display: flex;
 
   padding: 0 2rem;
+
+  @media #{$mobile-sm} {
+    padding: 2rem;
+  }
 }
 
 .services__icon {
   margin-right: 1.6rem;
+
+  img {
+    display: block;
+    width: 3rem;
+  }
 }
 
 .services__title {

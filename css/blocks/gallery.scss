@@ -2,11 +2,16 @@
 
 .gallery {
   display: flex;
+
+  @media #{$mobile-sm} {
+    flex-direction: column;
+  }
 }
 
 .gallery__col {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .gallery__item {
@@ -15,6 +20,8 @@
 
   img {
     display: block;
+    max-width: 32rem;
+    width: 100%;
     transition: all .3s linear 0s;
   }
 

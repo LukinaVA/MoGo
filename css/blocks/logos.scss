@@ -3,9 +3,29 @@
 .logos {
   padding: 4rem 0;
   background: $white-dark;
+
+  @media #{$mobile-sm} {
+    padding: 2rem 0;
+  }
 }
 
 .logos__row {
   display: flex;
   justify-content: space-between;
+
+  @media #{$mobile-sm} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.logos__item {
+  @media #{$mobile-sm} {
+    margin: 0 2rem 2rem;
+  }
+
+  img {
+    display: block;
+    width: 8.8rem;
+  }
 }

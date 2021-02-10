@@ -15,5 +15,10 @@
 
   img {
     display: block;
+    width: 5.86rem;
+
+    @media #{$mobile-sm} {
+      width: 6.86rem;
+    }
   }
 }

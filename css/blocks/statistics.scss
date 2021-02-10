@@ -6,6 +6,10 @@
 
 .statistics__items {
   display: flex;
+
+  @media #{$iphoneX} {
+    flex-direction: column;
+  }
 }
 
 .statistics__item {
@@ -21,8 +25,16 @@
 
   color: $white;
 
+  @media #{$iphoneX} {
+    padding: 1rem 0;
+  }
+
   &:not(&:last-child) {
     border-right: .06rem solid rgba(255, 255, 255, .5);
+
+    @media #{$iphoneX} {
+      border: none;
+    }
   }
 }
 

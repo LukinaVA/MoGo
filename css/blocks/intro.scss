@@ -19,6 +19,22 @@
   font-size: 4.8rem;
 
   text-align: center;
+  
+  @media #{$mobile} {
+    font-size: 3.8rem;
+  }
+
+  @media #{$mobile-sm} {
+    font-size: 3.33rem;
+  }
+
+  @media #{$iphoneX} {
+    font-size: 2.37rem;
+  }
+
+  @media #{$iphoneX} {
+    font-size: 1.869rem;
+  }
 }
 
 .intro__title {
@@ -31,6 +47,26 @@
   text-align: center;
   text-transform: uppercase;
   line-height: 9.3rem;
+
+  @media #{$mobile} {
+    font-size: 8rem;
+    line-height: 7.44rem;
+  }
+
+  @media #{$mobile-sm} {
+    font-size: 7rem;
+    line-height: 6.52rem;
+  }
+
+  @media #{$iphoneX} {
+    font-size: 5rem;
+    line-height: 4.65rem;
+  }
+
+  @media #{$iphone5} {
+    font-size: 4rem;
+    line-height: 3.72rem;
+  }
 
   &:after {
     content: '';
@@ -50,6 +86,14 @@
   text-decoration: none;
 
   border: .2rem solid $white;
+
+  @media #{$mobile-sm} {
+    font-size: .81rem;
+  }
+
+  @media #{$iphone5} {
+    font-size: .648rem;
+  }
 }
 
 .intro__slider {
@@ -70,14 +114,36 @@
 
   border-top: .2rem solid rgba(255,  255, 255, .5);
 
+  @media #{$mobile-sm} {
+    padding: 1.14rem 0;
+    font-size: 1.05rem;
+  }
+
+  @media #{$iphone5} {
+    padding: .9rem 0;
+    font-size: .84rem;
+  }
+
   &:not(:last-child) {
     margin-right: 2rem;
+
+    @media #{$iphone5} {
+      margin-right: 1rem;
+    }
   }
 
   span {
     margin-right: .5rem;
     font-weight: 700;
     font-size: 1.6rem;
+
+    @media #{$mobile-sm} {
+      font-size: 1.4rem;
+    }
+
+    @media #{$iphone5} {
+      font-size: 1.12rem;
+    }
   }
 
   &_active {

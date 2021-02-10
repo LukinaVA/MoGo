@@ -7,10 +7,20 @@
 
 .clients__reviews {
   display: flex;
+
+  @media #{$mobile-sm} {
+    flex-direction: column;
+  }
 }
 
 .clients__col {
   flex: 1;
+
+  @media #{$mobile-sm} {
+    &:not(&:last-child) {
+      margin-bottom: 4.6rem;
+    }
+  }
 }
 
 .clients__item {
@@ -23,6 +33,11 @@
 
 .clients__avatar {
   margin: 0 1.6rem 0 2.6rem;
+
+  img {
+    display: block;
+    width: 7.3rem;
+  }
 }
 
 .clients__content {

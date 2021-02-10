@@ -1,0 +1,81 @@
+@import "../vars";
+
+.burger-menu {
+  width: 30px;
+  padding: 10px 0;
+  display: none;
+
+  font-size: 0;
+  color: transparent;
+
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.active &__item {
+    background: none;
+  }
+
+  &.active &__item:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
+  }
+
+  &.active &__item:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    transition: background .2s linear;
+
+    &:before,
+    &:after {
+      content: "";
+
+      position: absolute;
+      width: 100%;
+      height: 3px;
+
+      background-color: #fff;
+      left: 0;
+      z-index: 1;
+
+      transition: transform .2s linear;
+    }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:after {
+      bottom: -8px;
+    }
+  }
+
+  @media #{$mobile-sm} {
+    display: block;
+  }
+}

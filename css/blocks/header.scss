@@ -13,6 +13,23 @@
   font-size: 2rem;
 }
 
+.header__nav {
+  @media #{$mobile-sm} {
+    display: none;
+    width: 100%;
+
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+
+    background-color: rgba(243, 129, 129, 0.5);
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
 .header__link {
   margin-left: 3.3rem;
   padding-bottom: .6rem;
@@ -26,5 +43,10 @@
   &_active {
     color: $yellow;
     border-bottom: .2rem solid $yellow;
+  }
+
+  img {
+    display: inline-block;
+    width: 1.5rem;
   }
 }

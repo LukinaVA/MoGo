@@ -37,7 +37,11 @@ html {
   color: $grey;
 
   @media #{$laptop} {
-    font-size: 11px;
+    font-size: 13px;
+  }
+
+  @media #{$tablet} {
+    font-size: 12px;
   }
 }
 
@@ -113,5 +117,6 @@ a {
 @import "blocks/map";
 @import "blocks/footer";
 @import "blocks/inst-gallery";
+@import "blocks/burger-menu";
 
 @import "helpers";

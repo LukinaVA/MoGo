@@ -19,27 +19,41 @@
     align-items: center;
 
     padding: 0 4.6rem 0 1.3rem;
+
+    @media #{$mobile-sm} {
+      padding: 0 1.3rem;
+    }
   }
 
   &:after {
     transform: rotate(180deg);
     padding: 0 1.3rem 0 4.6rem;
+
+    @media #{$mobile-sm} {
+      padding: 0 1.3rem;
+    }
   }
 }
 
 .slider__media {
   position: relative;
   margin-right: 4rem;
+
+  @media #{$mobile-sm} {
+    display: none;
+  }
 }
 
 .slider__img {
   display: block;
+  width: 10rem;
 
   &_positioned {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 5rem;
   }
 }
 

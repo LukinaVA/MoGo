@@ -2,15 +2,32 @@
 
 .suggestion__content {
   display: flex;
+
+  @media #{$mobile-sm} {
+    flex-direction: column;
+  }
 }
 
 .suggestion__img {
   flex: 1;
   margin-right: 2rem;
 
+  @media #{$mobile-sm} {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
   img {
     display: block;
     width: 38rem;
+
+    @media #{$mobile} {
+      width: 30rem;
+    }
+
+    @media #{$mobile-sm} {
+      width: 100%;
+    }
   }
 }
 

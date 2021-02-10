@@ -2,20 +2,48 @@
 
 .blog__feed {
   display: flex;
+  
+  @media #{$mobile-sm} {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .blog__item {
+  @media #{$mobile-sm} {
+    max-width: 27rem;
+    width: 100%;
+  }
+
   &:not(&:last-child) {
     margin-right: 2rem;
+
+    @media #{$mobile-sm} {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
 }
 
 .blog__img {
+  display: block;
   position: relative;
 
   img {
     display: block;
     width: 25.33rem;
+
+    @media #{$mobile} {
+      width: 19rem;
+    }
+
+    @media #{$mobile-sm} {
+      width: 27rem;
+    }
+
+    @media #{$iphone5} {
+      width: 25rem;
+    }
   }
 }
 
@@ -41,12 +69,18 @@
 }
 
 .blog__title {
+  display: block;
   margin-top: .8rem;
   font-family: Montserrat, monospace;
   font-weight: 400;
   font-size: .93rem;
   color: $black;
   text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .blog__text {

@@ -3,12 +3,30 @@
 .media {
   display: flex;
   justify-content: space-between;
+
+  @media #{$mobile-sm} {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .media__item {
+  @media #{$mobile-sm} {
+    width: 35rem;
+    margin-bottom: 2rem;
+  }
+
+  @media #{$iphoneX} {
+    width: 29rem;
+  }
+
+  @media #{$iphone5} {
+    width: 25rem;
+  }
+
   &:hover {
     .media__img {
-      transform: translate(-10px, -10px);
+      transform: translate(-.6rem, -.6rem);
 
       img {
         opacity: .1;
@@ -25,6 +43,13 @@
 .media__bg {
   position: relative;
   background: $blue;
+  margin: 0 auto;
+
+  &_small {
+    @media #{$mobile-sm} {
+      width: 25rem;
+    }
+  }
 }
 
 .media__img {
@@ -35,6 +60,30 @@
     display: block;
     width: 25.33rem;
     transition: all .3s linear 0s;
+
+    @media #{$mobile} {
+      width: 20rem;
+    }
+
+    @media #{$mobile-sm} {
+      width: 35rem;
+    }
+
+    @media #{$iphoneX} {
+      width: 29rem;
+    }
+
+    @media #{$iphone5} {
+      width: 25rem;
+    }
+  }
+
+  &_small {
+    img {
+      @media #{$mobile-sm} {
+        width: 25rem;
+      }
+    }
   }
 }
 
@@ -52,6 +101,10 @@
 
   text-transform: uppercase;
   transition: all .3s linear 0s;
+
+  @media #{$mobile} {
+    font-size: 1rem;
+  }
 
   &:before {
     content: url($image_dir + '/about/users.svg');
@@ -79,6 +132,11 @@
   background: $yellow;
 
   cursor: pointer;
+
+  @media #{$mobile} {
+    width: 3rem;
+    height: 3rem;
+  }
 
   &:not(&:last-child) {
     border-right: .06rem solid rgba(243, 129, 129, .1);

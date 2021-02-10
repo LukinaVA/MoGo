@@ -13,14 +13,34 @@
   &_main {
     img {
       display: block;
+      width: 38rem;
       margin: 0 auto;
+
+      @media #{$iphoneX} {
+        width: 28rem;
+      }
+
+      @media #{$iphone5} {
+        width: 24rem;
+      }
     }
   }
 
   &_small {
     position: absolute;
-
     top: 38%;
     left: 60%;
+
+    img {
+      width: 18.26rem;
+
+      @media #{$iphoneX} {
+        width: 13.52rem;
+      }
+
+      @media #{$iphone5} {
+        width: 11.65rem;
+      }
+    }
   }
 }

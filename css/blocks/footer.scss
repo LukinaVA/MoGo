@@ -1,8 +1,22 @@
 @import "../vars";
 
+.footer__content {
+  margin: 4.6rem 0;
+  display: flex;
+
+  @media #{$mobile-sm} {
+    flex-direction: column;
+  }
+}
+
 .footer__col {
   &:not(&:last-child) {
     margin-right: 3rem;
+
+    @media #{$mobile-sm} {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
 }
 
@@ -12,15 +26,11 @@
 
 .footer__col-2 {
   flex: 2;
+
 }
 
 .footer__col-3 {
   flex: 1;
-}
-
-.footer__content {
-  margin: 4.6rem 0;
-  display: flex;
 }
 
 .footer__logo {
@@ -57,8 +67,23 @@
   font-style: italic;
   font-weight: 300;
 
+  @media #{$iphoneX} {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span {
+    @media #{$iphoneX} {
+      display: none;
+    }
+  }
+
   a {
     margin-left: 1.2rem;
+
+    @media #{$iphoneX} {
+      margin-left: 0;
+    }
   }
 }
 
@@ -102,6 +127,10 @@
 
   color: $black;
   text-transform: uppercase;
+
+  @media #{$mobile-sm} {
+    font-size: 1.2rem;
+  }
 }
 
 .footer__blog {
@@ -126,6 +155,15 @@
 
 .footer__img {
   margin-right: 1.3rem;
+
+  img {
+    display: block;
+    width: 8rem;
+
+    @media #{$mobile-sm} {
+      width: 10rem;
+    }
+  }
 }
 
 .footer__date {
@@ -141,12 +179,20 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media #{$mobile-sm} {
+    font-size: 1rem;
+  }
 }
 
 .footer__date {
   font-style: italic;
   font-weight: 300;
   font-size: .86rem;
+
+  @media #{$mobile-sm} {
+    font-size: .96rem;
+  }
 }
 
 .footer__link {
@@ -155,10 +201,13 @@
 
   font-style: italic;
   font-weight: 300;
-  font-size: .86rem;
 
   text-decoration: none;
   color: $black;
+
+  @media #{$mobile-sm} {
+    font-size: 1.1rem;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -175,6 +224,10 @@
   color: $black;
 
   text-align: center;
+
+  @media #{$mobile-sm} {
+    font-size: 1.1rem;
+  }
 
   a {
     text-decoration: none;

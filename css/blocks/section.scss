@@ -3,6 +3,10 @@
 .section {
   padding-bottom: 7.3rem;
 
+  @media #{$iphoneX} {
+    padding-bottom: 3.3rem;
+  }
+
   &_small {
     padding-bottom: 0;
   }
