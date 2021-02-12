@@ -6,26 +6,44 @@
   align-items: center;
 
   padding-top: 2rem;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    background: rgba(243, 129, 129, 0.8);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  }
 }
 
 .header__logo {
   font-weight: 700;
   font-size: 2rem;
+  text-decoration: none;
 }
 
 .header__nav {
-  @media #{$mobile-sm} {
+  @media #{$mobile} {
     display: none;
     width: 100%;
 
     position: absolute;
-    top: 4.5rem;
+    top: 4.4rem;
     left: 0;
 
-    background-color: rgba(243, 129, 129, 0.5);
+    background-color: rgba(243, 129, 129, 0.8);
 
     &.active {
-      display: block;
+      display: flex;
+      flex-direction: column;
+
+      .header__link {
+        margin-left: 0;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
@@ -40,12 +58,18 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  transition: all .2s linear 0s;
+
   &_active {
     color: $yellow;
     border-bottom: .2rem solid $yellow;
+
+    svg {
+      fill: $yellow;
+    }
   }
 
-  img {
+  svg {
     display: inline-block;
     width: 1.5rem;
   }

@@ -3,6 +3,7 @@
 .accordion__item {
   position: relative;
   border-collapse: collapse;
+
   &:not(&:last-child) {
     margin-bottom: .6rem;
   }
@@ -22,8 +23,15 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-
   border: .06rem solid $grey-lite;
+
+  cursor: pointer;
+
+  &:hover {
+    .accordion__title {
+      text-decoration: underline;
+    }
+  }
 }
 
 .accordion__ico {
@@ -52,6 +60,8 @@
 
 .accordion__content {
   display: none;
+  max-height: 11rem;
+  overflow-y: scroll;
 
   padding: 1rem;
   border: .06rem solid $grey-lite;
@@ -59,4 +69,16 @@
   font-style: italic;
   line-height: 1.5;
   color: $grey;
+
+  &::-webkit-scrollbar {
+    width: .33rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $blue;
+  }
 }

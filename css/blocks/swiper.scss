@@ -1,6 +1,6 @@
 @import "../vars";
 
-.slider {
+.swiper {
   background: $white-dark;
 
   &.reviews {
@@ -8,34 +8,20 @@
   }
 }
 
-.slider__item {
-  display: flex;
-  padding: 4.6rem 0;
-
-  &:before,
-  &:after {
-    content: url($image_dir + '/quotes/arrow.svg');
-    display: flex;
-    align-items: center;
-
-    padding: 0 4.6rem 0 1.3rem;
-
-    @media #{$mobile-sm} {
-      padding: 0 1.3rem;
-    }
-  }
-
-  &:after {
-    transform: rotate(180deg);
-    padding: 0 1.3rem 0 4.6rem;
-
-    @media #{$mobile-sm} {
-      padding: 0 1.3rem;
-    }
-  }
+.swiper-container {
+  max-width: 82rem;
+  width: 100%;
 }
 
-.slider__media {
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 4.6rem 7.3rem;
+}
+
+.swiper-slide__media {
   position: relative;
   margin-right: 4rem;
 
@@ -44,7 +30,7 @@
   }
 }
 
-.slider__img {
+.swiper-slide__img {
   display: block;
   width: 10rem;
 
@@ -57,20 +43,20 @@
   }
 }
 
-.slider__content {
+.swiper-slide__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.slider__text {
+.swiper-slide__text {
   font-style: italic;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-.slider__signature {
+.swiper-slide__signature {
   font-family: KaushanScript, monospace;
   font-size: 1.6rem;
   color: $black;
@@ -86,3 +72,23 @@
     vertical-align: middle;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ccc;
+  //width: .8rem;
+  //height: 1.5rem;
+
+  &:after {
+    font-size: 1.5rem;
+  }
+}
+
+.swiper-button-prev {
+  left: 1.5rem;
+}
+
+.swiper-button-next {
+  right: 1.5rem;
+}
+

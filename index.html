@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width'>
     <title>MoGo</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
     <div class='wrapper'>
-        <div class='intro'>
+        <div class='intro' id='intro'>
             <div class='container'>
                 <header class='header'>
-                    <div class='header__logo'>MoGo</div>
+                    <a href='#intro' class='header__logo'>MoGo</a>
                     <nav class='header__nav'>
-                        <a href='#' class='header__link header__link_active'>About</a>
-                        <a href='#' class='header__link'>Service</a>
-                        <a href='#' class='header__link'>Work</a>
-                        <a href='#' class='header__link'>Blog</a>
-                        <a href='#' class='header__link'>Contact</a>
+                        <a href='#about' class='header__link'>About</a>
+                        <a href='#service' class='header__link'>Service</a>
+                        <a href='#work' class='header__link'>Work</a>
+                        <a href='#blog' class='header__link'>Blog</a>
+                        <a href='#contact' class='header__link'>Contact</a>
                         <a href='#' class='header__link'>
-                            <img src='images/intro/cart.svg' alt='cart'/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17.62" height="14.031" viewBox="0 0 17.62 14.031" fill='#fff'>
+                                <path id="SHOPPING_CART" class="cls-1" d="M1501.73,40.663h0l-2.48,5.5h0a0.815,0.815,0,0,1-.7.485h0l-7.12.475,0.41,1.177h7.76a1.65,1.65,0,1,1-1.65,1.651h-7.7a1.65,1.65,0,1,1-1.65-1.651h1.49l-3.18-9.075h-1.89a0.825,0.825,0,0,1,0-1.65h2.48a0.835,0.835,0,0,1,.78.554h0l0.48,1.373h12.21a0.826,0.826,0,0,1,.83.825A0.941,0.941,0,0,1,1501.73,40.663Zm-12.39.487,1.52,4.357,7.09-.473,1.75-3.884h-10.36Z" transform="translate(-1484.19 -37.563)"/>
+                            </svg>
                         </a>
                         <a href='#' class='header__link'>
-                            <img src='images/intro/glass.svg' alt='glass'/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17.62" height="17.625" viewBox="0 0 17.62 17.625" fill='#fff'>
+                                <path id="MAGNIFYING_GLASS" class="cls-1" d="M1561.32,50.983a1.652,1.652,0,0,1-2.34,2.334h0l-4.83-4.836a6.627,6.627,0,1,1,2.33-2.334l4.84,4.836h0ZM1550.8,37.85a4.95,4.95,0,1,0,4.95,4.95A4.952,4.952,0,0,0,1550.8,37.85Z" transform="translate(-1544.19 -36.188)"/>
+                            </svg>
                         </a>
                     </nav>
                     <button class='burger-menu' type='button'>
@@ -41,7 +46,7 @@
             </div>
         </div> <!-- intro -->
 
-        <div class='section'>
+        <div class='section' id='about'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>What we do</div>
@@ -112,7 +117,7 @@
             </div>
         </div> <!-- statistics -->
 
-        <div class='services section'>
+        <div class='services section' id='service'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>We work with</div>
@@ -280,24 +285,57 @@
             </div>
         </div> <!-- suggestion -->
 
-        <div class='slider'>
-            <div class='container'>
-                <div class='slider__item'>
-                    <div class='slider__media'>
-                        <img class='slider__img' src='images/quotes/rectangle.svg' alt=''/>
-                        <img class='slider__img slider__img_positioned' src='images/quotes/speech.svg' alt=''/>
-                    </div>
-                    <div class='slider__content'>
-                        <div class='slider__text'>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.”
+        <div class='swiper'>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class='swiper-slide__media'>
+                            <img class='swiper-slide__img' src='images/quotes/rectangle.svg' alt=''/>
+                            <img class='swiper-slide__img swiper-slide__img_positioned' src='images/quotes/speech.svg' alt=''/>
                         </div>
-                        <div class='slider__signature'>Jon Doe</div>
+                        <div class='swiper-slide__content'>
+                            <div class='swiper-slide__text'>
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation.”
+                            </div>
+                            <div class='swiper-slide__signature'>Jon Doe</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class='swiper-slide__media'>
+                            <img class='swiper-slide__img' src='images/quotes/rectangle.svg' alt=''/>
+                            <img class='swiper-slide__img swiper-slide__img_positioned' src='images/quotes/speech.svg' alt=''/>
+                        </div>
+                        <div class='swiper-slide__content'>
+                            <div class='swiper-slide__text'>
+                                “2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation.”
+                            </div>
+                            <div class='swiper-slide__signature'>Jon Doe</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class='swiper-slide__media'>
+                            <img class='swiper-slide__img' src='images/quotes/rectangle.svg' alt=''/>
+                            <img class='swiper-slide__img swiper-slide__img_positioned' src='images/quotes/speech.svg' alt=''/>
+                        </div>
+                        <div class='swiper-slide__content'>
+                            <div class='swiper-slide__text'>
+                                “3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation.”
+                            </div>
+                            <div class='swiper-slide__signature'>Jon Doe</div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-        </div> <!-- slider -->
+        </div> <!-- slider quotes -->
 
         <div class='team section'>
             <div class='container'>
@@ -418,7 +456,7 @@
             </div>
         </div> <!-- logos -->
 
-        <div class='section_small'>
+        <div class='section_small' id='work'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>What we do</div>
@@ -492,23 +530,54 @@
             </div> <!-- gallery -->
         </div> <!-- gallery -->
 
-        <div class='slider reviews'>
-            <div class='container'>
-                <div class='slider__item'>
-                    <div class='slider__media'>
-                        <img class='slider__img' src='images/reviews/avatar.png' alt=''/>
-                    </div>
-                    <div class='slider__content'>
-                        <div class='slider__text'>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.”
+        <div class='swiper reviews'>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class='swiper-slide__media'>
+                            <img class='swiper-slide__img' src='images/reviews/avatar.png' alt=''/>
                         </div>
-                        <div class='slider__signature'>Joshua Earle</div>
+                        <div class='swiper-slide__content'>
+                            <div class='swiper-slide__text'>
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation.”
+                            </div>
+                            <div class='swiper-slide__signature'>Joshua Earle</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class='swiper-slide__media'>
+                            <img class='swiper-slide__img' src='images/reviews/avatar.png' alt=''/>
+                        </div>
+                        <div class='swiper-slide__content'>
+                            <div class='swiper-slide__text'>
+                                “2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation.”
+                            </div>
+                            <div class='swiper-slide__signature'>Joshua Earle</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class='swiper-slide__media'>
+                            <img class='swiper-slide__img' src='images/reviews/avatar.png' alt=''/>
+                        </div>
+                        <div class='swiper-slide__content'>
+                            <div class='swiper-slide__text'>
+                                “3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation.”
+                            </div>
+                            <div class='swiper-slide__signature'>Joshua Earle</div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-        </div> <!-- slider -->
+        </div> <!-- slider reviews -->
 
         <div class='clients section'>
             <div class='container'>
@@ -578,7 +647,7 @@
             </div>
         </div> <!-- clients -->
 
-        <div class='blog section'>
+        <div class='blog section' id='blog'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>Our stories</div>
@@ -632,10 +701,10 @@
         </div> <!-- blog -->
 
         <div class='map'>
-            <a href='#' class='map__link'>Open map</a>
+            <a href='https://goo.gl/maps/wdPgukUP3VNmYuDWA' target='_blank' class='map__link'>Open map</a>
         </div> <!-- map -->
 
-        <footer class='footer'>
+        <footer class='footer' id='contact'>
             <div class='container'>
                 <div class='footer__content'>
                     <div class='footer__col footer__col-1'>
@@ -742,5 +811,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src='js/app.js'></script>
 </body>
 </html>

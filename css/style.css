@@ -97,23 +97,39 @@ a {
   align-items: center;
   padding-top: 2rem;
 }
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  background: rgba(243, 129, 129, 0.8);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
 
 .header__logo {
   font-weight: 700;
   font-size: 2rem;
+  text-decoration: none;
 }
 
-@media (max-width: 565px) {
+@media (max-width: 767px) {
   .header__nav {
     display: none;
     width: 100%;
     position: absolute;
-    top: 4.5rem;
+    top: 4.4rem;
     left: 0;
-    background-color: rgba(243, 129, 129, 0.5);
+    background-color: rgba(243, 129, 129, 0.8);
   }
   .header__nav.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__nav.active .header__link {
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -124,12 +140,16 @@ a {
   font-size: 0.93rem;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.2s linear 0s;
 }
 .header__link_active {
   color: #fce38a;
   border-bottom: 0.2rem solid #fce38a;
 }
-.header__link img {
+.header__link_active svg {
+  fill: #fce38a;
+}
+.header__link svg {
   display: inline-block;
   width: 1.5rem;
 }
@@ -705,6 +725,10 @@ a {
   align-items: center;
   padding: 1rem;
   border: 0.06rem solid #e5e5e5;
+  cursor: pointer;
+}
+.accordion__header:hover .accordion__title {
+  text-decoration: underline;
 }
 
 .accordion__ico {
@@ -730,60 +754,59 @@ a {
 
 .accordion__content {
   display: none;
+  max-height: 11rem;
+  overflow-y: scroll;
   padding: 1rem;
   border: 0.06rem solid #e5e5e5;
   font-style: italic;
   line-height: 1.5;
   color: #999;
 }
+.accordion__content::-webkit-scrollbar {
+  width: 0.33rem;
+}
+.accordion__content::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+.accordion__content::-webkit-scrollbar-thumb {
+  background: #95e1d3;
+}
 
-.slider {
+.swiper {
   background: #f8f8f8;
 }
-.slider.reviews {
+.swiper.reviews {
   background: #fff;
 }
 
-.slider__item {
-  display: flex;
-  padding: 4.6rem 0;
-}
-.slider__item:before, .slider__item:after {
-  content: url("../images/quotes/arrow.svg");
-  display: flex;
-  align-items: center;
-  padding: 0 4.6rem 0 1.3rem;
-}
-@media (max-width: 565px) {
-  .slider__item:before, .slider__item:after {
-    padding: 0 1.3rem;
-  }
-}
-.slider__item:after {
-  transform: rotate(180deg);
-  padding: 0 1.3rem 0 4.6rem;
-}
-@media (max-width: 565px) {
-  .slider__item:after {
-    padding: 0 1.3rem;
-  }
+.swiper-container {
+  max-width: 82rem;
+  width: 100%;
 }
 
-.slider__media {
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 4.6rem 7.3rem;
+}
+
+.swiper-slide__media {
   position: relative;
   margin-right: 4rem;
 }
 @media (max-width: 565px) {
-  .slider__media {
+  .swiper-slide__media {
     display: none;
   }
 }
 
-.slider__img {
+.swiper-slide__img {
   display: block;
   width: 10rem;
 }
-.slider__img_positioned {
+.swiper-slide__img_positioned {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -791,25 +814,25 @@ a {
   width: 5rem;
 }
 
-.slider__content {
+.swiper-slide__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.slider__text {
+.swiper-slide__text {
   font-style: italic;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-.slider__signature {
+.swiper-slide__signature {
   font-family: KaushanScript, monospace;
   font-size: 1.6rem;
   color: #333;
 }
-.slider__signature:before {
+.swiper-slide__signature:before {
   content: "";
   display: inline-block;
   width: 4rem;
@@ -817,6 +840,23 @@ a {
   background: #f38181;
   margin-right: 0.6rem;
   vertical-align: middle;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ccc;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.5rem;
+}
+
+.swiper-button-prev {
+  left: 1.5rem;
+}
+
+.swiper-button-next {
+  right: 1.5rem;
 }
 
 .logos {
@@ -1418,7 +1458,7 @@ a {
 .burger-menu__item:after {
   bottom: -8px;
 }
-@media (max-width: 565px) {
+@media (max-width: 767px) {
   .burger-menu {
     display: block;
   }
