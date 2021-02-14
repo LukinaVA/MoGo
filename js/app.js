@@ -1,3 +1,4 @@
+/////////////// headerNav
 const headerLinks = document.documentElement.querySelectorAll('.header__link');
 const header = document.documentElement.querySelector('.header');
 
@@ -41,6 +42,8 @@ function isBlockScrolled(block) {
     return window.scrollY > block.offsetHeight;
 }
 
+
+/////////////// burgerMenu
 const burgerMenu = document.documentElement.querySelector('.burger-menu');
 const headerNav = document.documentElement.querySelector('.header__nav');
 
@@ -60,6 +63,8 @@ accordionItems.forEach(item => {
     })
 });
 
+
+/////////////// sliders
 new Swiper('.swiper-container', {
     speed: 700,
     loop: true,
@@ -69,5 +74,31 @@ new Swiper('.swiper-container', {
     },
 });
 
+/////////////// lazy load images
+const images = document.documentElement.querySelectorAll('img');
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+function handleImage(images, observer) {
+    images.forEach(image => {
+        if (image.intersectionRatio > 0) {
+            loadImage(image.target);
+        }
+    })
+}
+
+function loadImage(image) {
+    image.src = image.getAttribute('data-src');
+}
+
+const imgObserver = new IntersectionObserver(handleImage, options);
+
+images.forEach(img => {
+    imgObserver.observe(img);
+});
 
 showHeader();
