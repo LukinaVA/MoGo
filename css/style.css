@@ -177,7 +177,7 @@ a {
 }
 
 .intro__subtitle {
-  margin-top: 10rem;
+  margin-top: 15rem;
   font-family: KaushanScript, monospace;
   font-weight: 400;
   font-size: 4.8rem;
@@ -252,6 +252,10 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   border: 0.2rem solid #fff;
+  transition: all 0.3s linear 0s;
+}
+.intro__btn:hover {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
 }
 @media (max-width: 565px) {
   .intro__btn {
