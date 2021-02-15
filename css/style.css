@@ -95,7 +95,20 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  color: #fff;
   padding-top: 2rem;
+  transition: all 0.3s linear 0s;
+}
+.header.initial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 82rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .header.fixed {
   position: fixed;

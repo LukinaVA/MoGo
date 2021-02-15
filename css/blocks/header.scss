@@ -5,7 +5,23 @@
   justify-content: space-between;
   align-items: center;
 
+  font-family: Montserrat, monospace;
+  font-weight: 700;
+  color: $white;
+
   padding-top: 2rem;
+  transition: all .3s linear 0s;
+
+  &.initial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    max-width: 82rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 
   &.fixed {
     position: fixed;

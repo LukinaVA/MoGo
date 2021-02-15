@@ -9,31 +9,32 @@
 </head>
 <body>
     <div class='wrapper'>
+        <header class='header initial'>
+            <a href='#intro' class='header__logo'>MoGo</a>
+            <nav class='header__nav'>
+                <a href='#about' class='header__link header__link_active'>About</a>
+                <a href='#service' class='header__link'>Service</a>
+                <a href='#work' class='header__link'>Work</a>
+                <a href='#blog' class='header__link'>Blog</a>
+                <a href='#contact' class='header__link'>Contact</a>
+                <a href='#' class='header__link'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.62" height="14.031" viewBox="0 0 17.62 14.031" fill='#fff'>
+                        <path id="SHOPPING_CART" class="cls-1" d="M1501.73,40.663h0l-2.48,5.5h0a0.815,0.815,0,0,1-.7.485h0l-7.12.475,0.41,1.177h7.76a1.65,1.65,0,1,1-1.65,1.651h-7.7a1.65,1.65,0,1,1-1.65-1.651h1.49l-3.18-9.075h-1.89a0.825,0.825,0,0,1,0-1.65h2.48a0.835,0.835,0,0,1,.78.554h0l0.48,1.373h12.21a0.826,0.826,0,0,1,.83.825A0.941,0.941,0,0,1,1501.73,40.663Zm-12.39.487,1.52,4.357,7.09-.473,1.75-3.884h-10.36Z" transform="translate(-1484.19 -37.563)"/>
+                    </svg>
+                </a>
+                <a href='#' class='header__link'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.62" height="17.625" viewBox="0 0 17.62 17.625" fill='#fff'>
+                        <path id="MAGNIFYING_GLASS" class="cls-1" d="M1561.32,50.983a1.652,1.652,0,0,1-2.34,2.334h0l-4.83-4.836a6.627,6.627,0,1,1,2.33-2.334l4.84,4.836h0ZM1550.8,37.85a4.95,4.95,0,1,0,4.95,4.95A4.952,4.952,0,0,0,1550.8,37.85Z" transform="translate(-1544.19 -36.188)"/>
+                    </svg>
+                </a>
+            </nav>
+            <button class='burger-menu' type='button'>
+                <span class="burger-menu__item">menu</span>
+            </button>
+        </header> <!-- header -->
+
         <div class='intro' id='intro'>
             <div class='container'>
-                <header class='header'>
-                    <a href='#intro' class='header__logo'>MoGo</a>
-                    <nav class='header__nav'>
-                        <a href='#about' class='header__link'>About</a>
-                        <a href='#service' class='header__link'>Service</a>
-                        <a href='#work' class='header__link'>Work</a>
-                        <a href='#blog' class='header__link'>Blog</a>
-                        <a href='#contact' class='header__link'>Contact</a>
-                        <a href='#' class='header__link'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17.62" height="14.031" viewBox="0 0 17.62 14.031" fill='#fff'>
-                                <path id="SHOPPING_CART" class="cls-1" d="M1501.73,40.663h0l-2.48,5.5h0a0.815,0.815,0,0,1-.7.485h0l-7.12.475,0.41,1.177h7.76a1.65,1.65,0,1,1-1.65,1.651h-7.7a1.65,1.65,0,1,1-1.65-1.651h1.49l-3.18-9.075h-1.89a0.825,0.825,0,0,1,0-1.65h2.48a0.835,0.835,0,0,1,.78.554h0l0.48,1.373h12.21a0.826,0.826,0,0,1,.83.825A0.941,0.941,0,0,1,1501.73,40.663Zm-12.39.487,1.52,4.357,7.09-.473,1.75-3.884h-10.36Z" transform="translate(-1484.19 -37.563)"/>
-                            </svg>
-                        </a>
-                        <a href='#' class='header__link'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17.62" height="17.625" viewBox="0 0 17.62 17.625" fill='#fff'>
-                                <path id="MAGNIFYING_GLASS" class="cls-1" d="M1561.32,50.983a1.652,1.652,0,0,1-2.34,2.334h0l-4.83-4.836a6.627,6.627,0,1,1,2.33-2.334l4.84,4.836h0ZM1550.8,37.85a4.95,4.95,0,1,0,4.95,4.95A4.952,4.952,0,0,0,1550.8,37.85Z" transform="translate(-1544.19 -36.188)"/>
-                            </svg>
-                        </a>
-                    </nav>
-                    <button class='burger-menu' type='button'>
-                        <span class="burger-menu__item">menu</span>
-                    </button>
-                </header>
                 <div class='intro__subtitle'>Creative Template</div>
                 <div class='intro__title'>Welcome to MoGo</div>
                 <a href='#' class='intro__btn'>Learn more</a>
@@ -46,7 +47,7 @@
             </div>
         </div> <!-- intro -->
 
-        <div class='section' id='about'>
+        <section class='section' id='about'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>What we do</div>
@@ -88,7 +89,7 @@
                 </div>
 
             </div>
-        </div> <!-- about -->
+        </section> <!-- about -->
 
         <div class='statistics'>
             <div class='container'>
@@ -117,7 +118,7 @@
             </div>
         </div> <!-- statistics -->
 
-        <div class='services section' id='service'>
+        <section class='services section' id='service'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>We work with</div>
@@ -126,7 +127,9 @@
                 <div class='services__box'>
                     <div class='services__row'>
                         <div class='services__item'>
-                            <img class='services__icon' src='' data-src='images/services/1.svg' alt=''/>
+                            <div class='services__icon'>
+                                <img src='' data-src='images/services/1.svg' alt=''/>
+                            </div>
                             <div class='services__content'>
                                 <div class='services__title'>Photography</div>
                                 <div class='services__info'>
@@ -135,7 +138,9 @@
                             </div>
                         </div>
                         <div class='services__item'>
-                            <img class='services__icon' src='' data-src='images/services/2.svg' alt=''/>
+                            <div class='services__icon'>
+                                <img src='' data-src='images/services/2.svg' alt=''/>
+                            </div>
                             <div class='services__content'>
                                 <div class='services__title'>Web Design</div>
                                 <div class='services__info'>
@@ -144,7 +149,9 @@
                             </div>
                         </div>
                         <div class='services__item'>
-                            <img class='services__icon' src='' data-src='images/services/3.svg' alt=''/>
+                            <div class='services__icon'>
+                                <img src='' data-src='images/services/3.svg' alt=''/>
+                            </div>
                             <div class='services__content'>
                                 <div class='services__title'>Creativity</div>
                                 <div class='services__info'>
@@ -155,7 +162,9 @@
                     </div>
                     <div class='services__row'>
                         <div class='services__item'>
-                            <img class='services__icon' src='' data-src='images/services/4.svg' alt=''/>
+                            <div class='services__icon'>
+                                <img src='' data-src='images/services/4.svg' alt=''/>
+                            </div>
                             <div class='services__content'>
                                 <div class='services__title'>seo</div>
                                 <div class='services__info'>
@@ -164,7 +173,9 @@
                             </div>
                         </div>
                         <div class='services__item'>
-                            <img class='services__icon' src='' data-src='images/services/5.svg' alt=''/>
+                            <div class='services__icon'>
+                                <img src='' data-src='images/services/5.svg' alt=''/>
+                            </div>
                             <div class='services__content'>
                                 <div class='services__title'>Css/Html</div>
                                 <div class='services__info'>
@@ -173,7 +184,9 @@
                             </div>
                         </div>
                         <div class='services__item'>
-                            <img class='services__icon' src='' data-src='images/services/6.svg' alt=''/>
+                            <div class='services__icon'>
+                                <img src='' data-src='images/services/6.svg' alt=''/>
+                            </div>
                             <div class='services__content'>
                                 <div class='services__title'>digital</div>
                                 <div class='services__info'>
@@ -184,9 +197,9 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- services -->
+        </section> <!-- services -->
 
-        <div class='design section section_small'>
+        <section class='design section section_small'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>For all devices</div>
@@ -201,9 +214,9 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- design -->
+        </section> <!-- design -->
 
-        <div class='suggestion section'>
+        <section class='suggestion section'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>Service</div>
@@ -216,7 +229,9 @@
                 </div>
 
                 <div class='suggestion__content'>
-                    <img class='suggestion__img' src='' data-src='images/suggestion/img.jpg' alt=''/>
+                    <div class='suggestion__img'>
+                        <img src='' data-src='images/suggestion/img.jpg' alt=''/>
+                    </div>
                     <div class='suggestion__accordion accordion'>
                         <div class='accordion__item accordion__item_active'>
                             <div class='accordion__header'>
@@ -263,15 +278,15 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- suggestion -->
+        </section> <!-- suggestion -->
 
         <div class='swiper'>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class='swiper-slide__media'>
-                            <img class='swiper-slide__img' src='' data-src='images/quotes/rectangle.svg' alt=''/>
-                            <img class='swiper-slide__img swiper-slide__img_positioned' src='' data-src='images/quotes/speech.svg' alt=''/>
+                            <img class='swiper-slide__img' src='images/quotes/rectangle.svg' data-src='images/quotes/rectangle.svg' alt=''/>
+                            <img class='swiper-slide__img swiper-slide__img_positioned' src='images/quotes/speech.svg' data-src='images/quotes/speech.svg' alt=''/>
                         </div>
                         <div class='swiper-slide__content'>
                             <div class='swiper-slide__text'>
@@ -284,8 +299,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class='swiper-slide__media'>
-                            <img class='swiper-slide__img' src='' data-src='images/quotes/rectangle.svg' alt=''/>
-                            <img class='swiper-slide__img swiper-slide__img_positioned' src='' data-src='images/quotes/speech.svg' alt=''/>
+                            <img class='swiper-slide__img' src='images/quotes/rectangle.svg' data-src='images/quotes/rectangle.svg' alt=''/>
+                            <img class='swiper-slide__img swiper-slide__img_positioned' src='images/quotes/speech.svg' data-src='images/quotes/speech.svg' alt=''/>
                         </div>
                         <div class='swiper-slide__content'>
                             <div class='swiper-slide__text'>
@@ -298,8 +313,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class='swiper-slide__media'>
-                            <img class='swiper-slide__img' src='' data-src='images/quotes/rectangle.svg' alt=''/>
-                            <img class='swiper-slide__img swiper-slide__img_positioned' src='' data-src='images/quotes/speech.svg' alt=''/>
+                            <img class='swiper-slide__img' src='images/quotes/rectangle.svg' data-src='images/quotes/rectangle.svg' alt=''/>
+                            <img class='swiper-slide__img swiper-slide__img_positioned' src='images/quotes/speech.svg' data-src='images/quotes/speech.svg' alt=''/>
                         </div>
                         <div class='swiper-slide__content'>
                             <div class='swiper-slide__text'>
@@ -317,7 +332,7 @@
             </div>
         </div> <!-- slider quotes -->
 
-        <div class='team section'>
+        <section class='team section'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>Who we are</div>
@@ -332,7 +347,10 @@
                 <div class='media'>
                     <div class='media__item'>
                         <div class='media__bg media__bg_small'>
-                            <img class='media__img media__img_small' src='' data-src='images/team/1.jpg' alt=''/>
+                            <div class='media__img media__img_small'>
+                                <img src='' data-src='images/team/1.jpg' alt=''/>
+                            </div>
+
                             <div class='media__social-networks'>
                                 <a class='media__social-network media__social-network_active'>
                                     <img src='' data-src='images/team/icon/facebook.svg' alt=''/>
@@ -356,7 +374,9 @@
 
                     <div class='media__item'>
                         <div class='media__bg media__bg_small'>
-                            <img class='media__img media__img_small' src='' data-src='images/team/2.jpg' alt=''/>
+                            <div class='media__img media__img_small'>
+                                <img src='' data-src='images/team/2.jpg' alt=''/>
+                            </div>
                             <div class='media__social-networks'>
                                 <a class='media__social-network media__social-network_active'>
                                     <img src='' data-src='images/team/icon/facebook.svg' alt=''/>
@@ -380,7 +400,9 @@
 
                     <div class='media__item'>
                         <div class='media__bg media__bg_small'>
-                            <img class='media__img media__img_small' src='' data-src='images/team/3.jpg' alt=''/>
+                            <div class='media__img media__img_small'>
+                                <img src='' data-src='images/team/3.jpg' alt=''/>
+                            </div>
                             <div class='media__social-networks'>
                                 <a class='media__social-network media__social-network_active'>
                                     <img src='' data-src='images/team/icon/facebook.svg' alt=''/>
@@ -403,7 +425,7 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- team -->
+        </section> <!-- team -->
 
         <div class='logos'>
             <div class='container'>
@@ -418,7 +440,7 @@
             </div>
         </div> <!-- logos -->
 
-        <div class='section_small' id='work'>
+        <section class='section_small' id='work'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>What we do</div>
@@ -490,14 +512,14 @@
                     </div>
                 </div>
             </div> <!-- gallery -->
-        </div> <!-- gallery -->
+        </section> <!-- gallery -->
 
         <div class='swiper reviews'>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class='swiper-slide__media'>
-                            <img class='swiper-slide__img' src='' data-src='images/reviews/avatar.png' alt=''/>
+                            <img class='swiper-slide__img' src='images/reviews/avatar.png' data-src='images/reviews/avatar.png' alt=''/>
                         </div>
                         <div class='swiper-slide__content'>
                             <div class='swiper-slide__text'>
@@ -510,7 +532,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class='swiper-slide__media'>
-                            <img class='swiper-slide__img' src='' data-src='images/reviews/avatar.png' alt=''/>
+                            <img class='swiper-slide__img' src='images/reviews/avatar.png' data-src='images/reviews/avatar.png' alt=''/>
                         </div>
                         <div class='swiper-slide__content'>
                             <div class='swiper-slide__text'>
@@ -523,7 +545,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class='swiper-slide__media'>
-                            <img class='swiper-slide__img' src='' data-src='images/reviews/avatar.png' alt=''/>
+                            <img class='swiper-slide__img' src='images/reviews/avatar.png' data-src='images/reviews/avatar.png' alt=''/>
                         </div>
                         <div class='swiper-slide__content'>
                             <div class='swiper-slide__text'>
@@ -541,7 +563,7 @@
             </div>
         </div> <!-- slider reviews -->
 
-        <div class='clients section'>
+        <section class='clients section'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>Happy Clients</div>
@@ -550,7 +572,9 @@
                 <div class='clients__reviews'>
                     <div class='clients__col'>
                         <div class='clients__item'>
-                            <img class='clients__avatar' src='' data-src='images/clients/1.png' alt=''/>
+                            <div class='clients__avatar'>
+                                <img src='' data-src='images/clients/1.png' alt=''/>
+                            </div>
                             <div class='clients__content'>
                                 <div class='clients__name'>Matthew Dix</div>
                                 <div class='clients__role'>Graphic Design</div>
@@ -561,7 +585,9 @@
                             </div>
                         </div>
                         <div class='clients__item'>
-                            <img class='clients__avatar' src='' data-src='images/clients/3.png' alt=''/>
+                            <div class='clients__avatar'>
+                                <img src='' data-src='images/clients/3.png' alt=''/>
+                            </div>
                             <div class='clients__content'>
                                 <div class='clients__name'>Jaelynn Castillo </div>
                                 <div class='clients__role'>Graphic Design</div>
@@ -575,7 +601,9 @@
 
                     <div class='clients__col'>
                         <div class='clients__item'>
-                            <img class='clients__avatar' src='' data-src='images/clients/2.png' alt=''/>
+                            <div class='clients__avatar'>
+                                <img src='' data-src='images/clients/2.png' alt=''/>
+                            </div>
                             <div class='clients__content'>
                                 <div class='clients__name'>Nick Karvounis</div>
                                 <div class='clients__role'>Graphic Design</div>
@@ -586,7 +614,9 @@
                             </div>
                         </div>
                         <div class='clients__item'>
-                            <img class='clients__avatar' src='' data-src='images/clients/4.png' alt=''/>
+                            <div class='clients__avatar'>
+                                <img src='' data-src='images/clients/4.png' alt=''/>
+                            </div>
                             <div class='clients__content'>
                                 <div class='clients__name'>Mike Petrucci</div>
                                 <div class='clients__role'>Graphic Design</div>
@@ -599,9 +629,9 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- clients -->
+        </section> <!-- clients -->
 
-        <div class='blog section' id='blog'>
+        <section class='blog section' id='blog'>
             <div class='container'>
                 <div class='section__header'>
                     <div class='section__subtitle'>Our stories</div>
@@ -652,7 +682,7 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- blog -->
+        </section> <!-- blog -->
 
         <div class='map'>
             <a href='https://goo.gl/maps/wdPgukUP3VNmYuDWA' target='_blank' class='map__link'>Open map</a>
