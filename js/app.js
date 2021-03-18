@@ -121,7 +121,7 @@ new Swiper('.swiper-container', {
 });
 
 /////////////// lazy load images
-const images = document.documentElement.querySelectorAll('img');
+const images = document.documentElement.querySelectorAll('.lazy-load-img');
 
 const imgOptions = {
     root: null,
