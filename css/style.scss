@@ -88,18 +88,6 @@ a {
   url('../fonts/KaushanScript-Regular.ttf');
 }
 
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, .3);
-}
-
-::-webkit-scrollbar-thumb {
-  background: $white;
-}
-
 @import "blocks/header";
 @import "blocks/intro";
 @import "blocks/section";

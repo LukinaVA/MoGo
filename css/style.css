@@ -79,18 +79,6 @@ a {
   font-weight: 400;
   src: local("KaushanScript"), local("KaushanScript-Regular"), url("../fonts/KaushanScript-Regular.ttf");
 }
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #fff;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
