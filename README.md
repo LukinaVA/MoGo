@@ -1,5 +1,4 @@
 # MoGo
-
 Adaptive landing page.
 
 Technology stack:
