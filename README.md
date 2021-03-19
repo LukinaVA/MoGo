@@ -1,3 +1,9 @@
-* БЭМ методология
-* препроцессор SCSS
-* адаптивная вёрстка
+# MoGo
+
+Adaptive landing page.
+
+Technology stack:
+* JavaScript
+* Swiper library
+* BEM
+* SCSS

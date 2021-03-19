@@ -168,6 +168,7 @@ a {
 }
 
 .intro {
+  min-height: 100vh;
   font-family: Montserrat, monospace;
   font-weight: 700;
   color: #fff;
